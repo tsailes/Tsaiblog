@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77b5fe 3px solid;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a {
+    color: #77b5fe;
+    font-weight: bold;
+}
+header a:hover {
+    color: #77b5fe;
+    font-weight: bold;
+}
+.preview-post {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px #ddd solid;
+    box-shadow: 0 0 5px #ccc;
+}
+.post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px #ddd solid;
+    box-shadow: 0 0 5px #ccc;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.pagination button {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+.pagination button.disabled {
+    background: #ccc;
+}

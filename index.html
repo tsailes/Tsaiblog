@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-docx-js/0.4.1/html-docx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>欢迎来到我的博客</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html" id="jerry-link">JERRY</a></li>
+                    <li><a href="jerry.html">Jerry游记</a></li>
+                    <li><a href="nju.html">南大生活</a></li>
+                    <li><a href="recipes.html">每日食谱</a></li>
+                    <li><a href="admin.html" id="admin-link" style="display: none;">管理页面</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="jerry">
+                <h2><a href="jerry.html">Jerry游记</a></h2>
+                <div id="jerry-preview"></div>
+            </section>
+            <section id="nju">
+                <h2><a href="nju.html">南大生活</a></h2>
+                <div id="nju-preview"></div>
+            </section>
+            <section id="recipes">
+                <h2><a href="recipes.html">每日食谱</a></h2>
+                <div id="recipes-preview"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>版权所有 &copy; 2024 我的博客</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

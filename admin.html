@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>管理页面</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>添加文章</h2>
+            <form id="add-article-form">
+                <label for="title">标题：</label>
+                <input type="text" id="title" name="title" required><br>
+                <label for="type">文章类型：</label>
+                <select id="type" name="type" required>
+                    <option value="jerry">Jerry游记</option>
+                    <option value="nju">南大生活</option>
+                    <option value="recipes">每日食谱</option>
+                </select><br>
+                <label for="file">上传文章文件 (Word)：</label>
+                <input type="file" id="file" name="file" accept=".doc,.docx" required><br>
+                <button type="submit">添加文章</button>
+            </form>
+            <h2>管理文章</h2>
+            <div id="jerry-articles"></div>
+            <div id="nju-articles"></div>
+            <div id="recipes-articles"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>版权所有 &copy; 2024 我的博客</p>
+        </div>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>
+
